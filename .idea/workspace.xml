@@ -23,17 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a5ba7e9-2e77-4c0c-b710-9577d160be37" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/teamsy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/teamsy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/DepartmentForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/DepartmentForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Department.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Department.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tenant.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tenant.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/factory.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/factory.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/model.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/model.stub" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +201,7 @@
       <workItem from="1604701363796" duration="2701000" />
       <workItem from="1604738914246" duration="4245000" />
       <workItem from="1604743923674" duration="339000" />
+      <workItem from="1604757126468" duration="2601000" />
     </task>
     <task id="LOCAL-00001" summary="use stubs to set migration">
       <created>1604740917887</created>
@@ -253,9 +249,9 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2381" y="224" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604743154254" />
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1604744029145">
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1604760174310">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604744029145" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604760174310" />
   </component>
 </project>

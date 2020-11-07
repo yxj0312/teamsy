@@ -1,19 +1,19 @@
 <?php
 
-namespace {{ factoryNamespace }};
+namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
-use {{ namespacedModel }};
+use App\Models\Phone;
 use App\Models\Tenant;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
-class {{ factory }}Factory extends Factory
+class PhoneFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = {{ model }}::class;
+    protected $model = Phone::class;
 
     /**
      * Define the model's default state.
