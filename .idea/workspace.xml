@@ -23,12 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a5ba7e9-2e77-4c0c-b710-9577d160be37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/DepartmentForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/DepartmentForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Department.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Department.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/factory.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/factory.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/model.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/model.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +42,7 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/vendor/filp/whoops" />
@@ -181,14 +178,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="LaravelIdea.Settings" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.TenantScopeTest.a_model_has_a_tenant_id_on_the_migration">
+    <configuration name="TenantScopeTest.a_model_has_a_tenant_id_on_the_migration" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TenantScopeTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TenantScopeTest.php" method="a_model_has_a_tenant_id_on_the_migration" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.TenantScopeTest.a_model_has_a_tenant_id_on_the_migration" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -201,7 +207,7 @@
       <workItem from="1604701363796" duration="2701000" />
       <workItem from="1604738914246" duration="4245000" />
       <workItem from="1604743923674" duration="339000" />
-      <workItem from="1604757126468" duration="2601000" />
+      <workItem from="1604757126468" duration="6932000" />
     </task>
     <task id="LOCAL-00001" summary="use stubs to set migration">
       <created>1604740917887</created>
@@ -217,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604743806732</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="use stubs to set model and factory">
+      <created>1604761913083</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604761913083</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,20 +251,25 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="use stubs to set migration" />
     <MESSAGE value="add department form" />
-    <option name="LAST_COMMIT_MESSAGE" value="add department form" />
+    <MESSAGE value="use stubs to set model and factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="use stubs to set model and factory" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2581" y="129" width="638" height="900" key="#PHP" timestamp="1604765747451">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2581" y="129" width="638" height="900" key="#PHP/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604765747451" />
     <state x="2677" y="284" key="NewPhpClassDialog" timestamp="1604703152328">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2677" y="284" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604703152328" />
-    <state x="2381" y="224" key="SettingsEditor" timestamp="1604743154254">
+    <state x="2381" y="224" key="SettingsEditor" timestamp="1604765052283">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2381" y="224" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604743154254" />
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1604760174310">
+    <state x="2381" y="224" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604765052283" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1604765317769">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604760174310" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604765317769" />
   </component>
 </project>
