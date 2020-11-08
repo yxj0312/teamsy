@@ -23,9 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a5ba7e9-2e77-4c0c-b710-9577d160be37" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/migration.create.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/migration.create.stub" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/TenantScopeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/TenantScopeTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +177,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="PHPUnit.TenantScopeTest.a_user_can_only_see_users_in_the_same_tenant">
@@ -214,7 +212,7 @@
       <workItem from="1604738914246" duration="4245000" />
       <workItem from="1604743923674" duration="339000" />
       <workItem from="1604757126468" duration="12406000" />
-      <workItem from="1604867293688" duration="5970000" />
+      <workItem from="1604867293688" duration="7066000" />
     </task>
     <task id="LOCAL-00001" summary="use stubs to set migration">
       <created>1604740917887</created>
@@ -244,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604765808116</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test stub by migration.create.stub">
+      <created>1604874240970</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604874240971</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +272,8 @@
     <MESSAGE value="add department form" />
     <MESSAGE value="use stubs to set model and factory" />
     <MESSAGE value="config phpunit" />
-    <option name="LAST_COMMIT_MESSAGE" value="config phpunit" />
+    <MESSAGE value="test stub by migration.create.stub" />
+    <option name="LAST_COMMIT_MESSAGE" value="test stub by migration.create.stub" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2581" y="129" width="638" height="900" key="#PHP" timestamp="1604765747451">
@@ -294,10 +300,14 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2677" y="284" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604703152328" />
-    <state x="2462" y="275" key="SettingsEditor" timestamp="1604873665629">
+    <state x="2462" y="275" key="SettingsEditor" timestamp="1604874686143">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2462" y="275" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604873665629" />
+    <state x="2462" y="275" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604874686143" />
+    <state x="2472" y="308" key="Vcs.Push.Dialog.v2" timestamp="1604874249759">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2472" y="308" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604874249759" />
     <state x="2582" y="296" width="596" height="568" key="find.popup" timestamp="1604775990344">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>

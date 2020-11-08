@@ -9,6 +9,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\File;
 use Tests\TestCase;
 use Str;
+
 class TenantScopeTest extends TestCase
 {
     use RefreshDatabase;
@@ -49,8 +50,18 @@ class TenantScopeTest extends TestCase
     }
 
     /** @test */
-    public function test_a_user_can_only_create_a_user_in_his_tenant(){
+    public function test_a_user_can_only_create_a_user_in_his_tenant_even_if_other_tenant_is_provided()
+    {
+        $tenant1 = Tenant::factory()->create();
+        $tenant2 = Tenant::factory()->create();
 
+        $user1 = User::factory()->create(['tenant_id' => $tenant1]);
+
+        auth()->login($user1);
+
+        $createdUser = User::factory()->create();
+
+        $this->assertTrue($createdUser->tenant_id == $user1);
     }
 
 }
