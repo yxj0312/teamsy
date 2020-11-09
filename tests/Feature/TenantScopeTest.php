@@ -59,9 +59,11 @@ class TenantScopeTest extends TestCase
 
         auth()->login($user1);
 
-        $createdUser = User::factory()->create();
+        $createdUser = User::factory()->make();
+        $createdUser->tenant_id = $tenant2->id;
+        $createdUser->save();
 
-        $this->assertTrue($createdUser->tenant_id == $user1);
+        $this->assertTrue($createdUser->tenant_id == $user1->tenant_id);
     }
 
 }
