@@ -23,10 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a5ba7e9-2e77-4c0c-b710-9577d160be37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Traits/BelongsToTenant.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/model.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/model.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,8 +206,19 @@
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
         <item itemvalue="PHPUnit.TenantScopeTest" />
         <item itemvalue="PHPUnit.TenantScopeTest.a_user_can_only_see_users_in_the_same_tenant" />
         <item itemvalue="PHPUnit.TenantScopeTest.a_model_has_a_tenant_id_on_the_migration" />
@@ -225,7 +238,7 @@
       <workItem from="1604743923674" duration="339000" />
       <workItem from="1604757126468" duration="12406000" />
       <workItem from="1604867293688" duration="7066000" />
-      <workItem from="1605038786010" duration="4830000" />
+      <workItem from="1605038786010" duration="7519000" />
     </task>
     <task id="LOCAL-00001" summary="use stubs to set migration">
       <created>1604740917887</created>
@@ -262,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604874240971</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor codes, using trait instead of booted method in the model">
+      <created>1605044340264</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605044340264</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,22 +314,22 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2581" y="129" width="638" height="900" key="#PHP/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604765747451" />
-    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1605044299286">
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1605045134683">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605044299286" />
-    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1605044299286">
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605045134683" />
+    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1605045134683">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605044299286" />
-    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1605044299286">
+    <state width="1877" height="316" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605045134683" />
+    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1605045134683">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605044299286" />
-    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1605044299286">
+    <state width="1877" height="316" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605045134683" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1605045134683">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605044299286" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605045134683" />
     <state x="2677" y="284" key="NewPhpClassDialog" timestamp="1605039459475">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
@@ -326,9 +346,9 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2582" y="296" width="596" height="568" key="find.popup/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604775990344" />
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1605044104657">
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1605045107358">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605044104657" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605045107358" />
   </component>
 </project>
