@@ -23,8 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a5ba7e9-2e77-4c0c-b710-9577d160be37" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Traits/BelongsToTenant.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/TenantScopeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/TenantScopeTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/model.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/model.stub" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +182,16 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.TenantScopeTest.a_user_can_only_see_users_in_the_same_tenant">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\teamsy\app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.TenantScopeTest">
+    <configuration name="TenantScopeTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TenantScopeTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TenantScopeTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
     <configuration name="TenantScopeTest.a_model_has_a_tenant_id_on_the_migration" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\TenantScopeTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TenantScopeTest.php" method="a_model_has_a_tenant_id_on_the_migration" scope="Method" />
       <method v="2" />
@@ -195,6 +206,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.TenantScopeTest" />
         <item itemvalue="PHPUnit.TenantScopeTest.a_user_can_only_see_users_in_the_same_tenant" />
         <item itemvalue="PHPUnit.TenantScopeTest.a_model_has_a_tenant_id_on_the_migration" />
       </list>
@@ -213,6 +225,7 @@
       <workItem from="1604743923674" duration="339000" />
       <workItem from="1604757126468" duration="12406000" />
       <workItem from="1604867293688" duration="7066000" />
+      <workItem from="1605038786010" duration="4830000" />
     </task>
     <task id="LOCAL-00001" summary="use stubs to set migration">
       <created>1604740917887</created>
@@ -273,37 +286,38 @@
     <MESSAGE value="use stubs to set model and factory" />
     <MESSAGE value="config phpunit" />
     <MESSAGE value="test stub by migration.create.stub" />
-    <option name="LAST_COMMIT_MESSAGE" value="test stub by migration.create.stub" />
+    <MESSAGE value="refactor codes, using trait instead of booted method in the model" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor codes, using trait instead of booted method in the model" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2581" y="129" width="638" height="900" key="#PHP" timestamp="1604765747451">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2581" y="129" width="638" height="900" key="#PHP/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604765747451" />
-    <state width="1877" height="314" key="GridCell.Tab.0.bottom" timestamp="1604868913017">
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1605044299286">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604868913017" />
-    <state width="1877" height="314" key="GridCell.Tab.0.center" timestamp="1604868913017">
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605044299286" />
+    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1605044299286">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604868913017" />
-    <state width="1877" height="314" key="GridCell.Tab.0.left" timestamp="1604868913017">
+    <state width="1877" height="316" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605044299286" />
+    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1605044299286">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604868913017" />
-    <state width="1877" height="314" key="GridCell.Tab.0.right" timestamp="1604868913017">
+    <state width="1877" height="316" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605044299286" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1605044299286">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604868913017" />
-    <state x="2677" y="284" key="NewPhpClassDialog" timestamp="1604703152328">
+    <state width="1877" height="316" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605044299286" />
+    <state x="2677" y="284" key="NewPhpClassDialog" timestamp="1605039459475">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2677" y="284" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604703152328" />
-    <state x="2462" y="275" key="SettingsEditor" timestamp="1604874686143">
+    <state x="2677" y="284" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605039459475" />
+    <state x="2462" y="275" key="SettingsEditor" timestamp="1605043339655">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2462" y="275" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604874686143" />
+    <state x="2462" y="275" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605043339655" />
     <state x="2472" y="308" key="Vcs.Push.Dialog.v2" timestamp="1604874249759">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
@@ -312,9 +326,9 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2582" y="296" width="596" height="568" key="find.popup/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604775990344" />
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1604870763474">
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1605044104657">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1604870763474" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1605044104657" />
   </component>
 </project>
