@@ -1,4 +1,4 @@
-@section('body')
+@section('title', 'Sign in to your account')
 <div>
     <div class="min-h-screen bg-white flex">
         <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
@@ -12,7 +12,6 @@
 
                 <div class="mt-8">
                     <div class="mt-6">
-                        {{$errors}}
                         <form wire:submit.prevent="register">
                             <x-text-input
                                 wire:model.debounce.100ms="name"
@@ -22,37 +21,27 @@
                                 placeholder="my placeholder"
                                 class="mt-4" />
 
-                            <div class="mt-6">
-                                <label for="companyName" class="block text-sm font-medium leading-5 text-gray-700">
-                                    Company Name
-                                </label>
-                                <div class="mt-1 rounded-md shadow-sm">
-                                    <input
-                                        wire:model="companyName"
-                                        id="companyName" type="text" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-                                </div>
-                            </div>
-                            <div class="mt-6">
-                                <label for="email" class="block text-sm font-medium leading-5 text-gray-700">
-                                    Email address
-                                </label>
-                                <div class="mt-1 rounded-md shadow-sm">
-                                    <input
-                                        wire:model="email"
-                                        id="email" type="email" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-                                </div>
-                            </div>
-
-                            <div class="mt-6">
-                                <label for="password" class="block text-sm font-medium leading-5 text-gray-700">
-                                    Password
-                                </label>
-                                <div class="mt-1 rounded-md shadow-sm">
-                                    <input
-                                        wire:model="password"
-                                        id="password" type="password" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-                                </div>
-                            </div>
+                             <x-text-input
+                                wire:model.debounce.100ms="companyName"
+                                type="text"
+                                label="Company Name"
+                                :required="true"
+                                placeholder="my placeholder"
+                                class="mt-4" />
+                            <x-text-input
+                                wire:model.debounce.100ms="email"
+                                type="email"
+                                label="Email"
+                                :required="true"
+                                placeholder="kevin@kevinmckee.me"
+                                class="mt-4" />
+                            <x-text-input
+                                wire:model.debounce.100ms="password"
+                                type="password"
+                                label="Password"
+                                :required="true"
+                                placeholder=""
+                                class="mt-4" />
 
                             <div class="mt-6">
                                 <span class="block w-full rounded-md shadow-sm">
@@ -71,4 +60,3 @@
         </div>
     </div>
 </div>
-@endsection
