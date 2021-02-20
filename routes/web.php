@@ -54,3 +54,6 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', LogoutController::class)
         ->name('logout');
 });
+
+
+Route::view('/welcome2', 'welcome2')->name('home2');
