@@ -18,7 +18,7 @@
     <script src="{{ url(mix('js/app.js')) }}" defer></script>
     <title>Model Learning</title>
 </head>
-<body>
+<body class="bg-gray-200">
     {{ $slot }}
 </body>
 </html>
