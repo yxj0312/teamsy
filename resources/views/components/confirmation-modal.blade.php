@@ -10,8 +10,8 @@
             </main>
 
             <footer>
-                <button class="bg-gray-400 text-xs uppercase py-2 px-4 rounded-md text-white hover:bg-gray-500 transition-all duration-200 mr-2">Cancel</button>
-                <butto  class="bg-blue-400 text-xs uppercase py-2 px-4 rounded-md text-white hover:bg-blue-500 transition-all duration-200">Continue</button>
+                <x-button class="bg-gray-400 hover:bg-gray-500">Cancel</x-button>
+                <x-button class="bg-blue-400 hover:bg-blue-500">Continue</x-button>
             </footer>
         </div>
     </div>
