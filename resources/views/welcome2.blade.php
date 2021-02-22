@@ -4,7 +4,7 @@
 </h1>
 
 <p>
-    <a href="#user-delete-modal"></a>
+    <a href="#user-delete-modal" class="underline text-blue-500">Delete</a>
 </p>
 
 <!-- Modal -->
