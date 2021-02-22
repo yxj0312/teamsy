@@ -8,7 +8,7 @@
 </p>
 
 <!-- Modal -->
-<x-confirmation-modal>
+<x-confirmation-modal name="user-delete-modal">
     <x-slot name="title">
         Are You Sure?
     </x-slot>
