@@ -3,6 +3,10 @@
     Here we go
 </h1>
 
+<p>
+    <a href="#user-delete-modal"></a>
+</p>
+
 <!-- Modal -->
 <x-confirmation-modal>
     <x-slot name="title">
