@@ -3,10 +3,15 @@
     Here we go
 </h1>
 
-<p>
-    <!-- <a href="#user-delete-modal" class="underline text-blue-500">Delete</a> -->
-    <a href="#something-else-modal" class="underline text-blue-500">Delete</a>
-</p>
+<main class="text-sm col-span-9">
+    <p class="mb-6">
+        Would you like to delete your account?
+    </p>
+    <p>
+        <!-- <a href="#user-delete-modal" class="underline text-blue-500">Delete</a> -->
+        <a href="#something-else-modal" class="underline text-blue-500 font-semibold">Delete</a>
+    </p>
+</main>
 
 <!-- Modal -->
 <x-confirmation-modal name="user-delete-modal">
