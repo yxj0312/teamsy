@@ -8,7 +8,7 @@
         Would you like to delete your account?
     </p>
 
-    <form action="" method="post">
+    <form action="" method="post" x-data @submit.prevent="alert('hello')">
         @csrf
 
         <p>
