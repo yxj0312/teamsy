@@ -19,6 +19,12 @@
     <title>Model Learning</title>
 </head>
 <body class="bg-gray-200">
-    {{ $slot }}
+    <h1>
+        Here we go
+    </h1>
+
+    <main class="text-sm col-span-9">
+        {{ $slot }}
+    </main>
 </body>
 </html>
