@@ -8,14 +8,15 @@
         Would you like to delete your account?
     </p>
 
-    <form 
+    <form
+        id="delete-user-form"
         action="" 
         method="post" 
-        x-data="{ confirmed: false }" 
+        x-data 
         @submit.prevent="
-            if (! confirmed) {
+            
                 location.hash = '#user-delete-modal'
-            }
+            
         "
     >
         @csrf
@@ -41,7 +42,7 @@
     <x-slot name="footer">
         <a href="# "class="bg-gray-400 hover:bg-gray-500 text-xs uppercase py-2 px-4 rounded-md text-white transition-all duration-200">Cancel</a>
         <!-- <x-button class="bg-gray-400 hover:bg-gray-500">Cancel</x-button> -->
-        <x-button class="bg-blue-400 hover:bg-blue-500">Continue</x-button>
+        <x-button class="bg-blue-400 hover:bg-blue-500" @click="document.querySelector('#delete-user-form').submit()">Continue</x-button>
     </x-slot>
 </x-confirmation-modal>
 
