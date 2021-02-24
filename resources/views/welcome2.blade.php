@@ -8,7 +8,16 @@
         Would you like to delete your account?
     </p>
 
-    <form action="" method="post" x-data @submit.prevent="alert('hello')">
+    <form 
+        action="" 
+        method="post" 
+        x-data="{ confirmed: false }" 
+        @submit.prevent="
+            if (! confirmed) {
+                location.hash = '#user-delete-modal'
+            }
+        "
+    >
         @csrf
 
         <p>
