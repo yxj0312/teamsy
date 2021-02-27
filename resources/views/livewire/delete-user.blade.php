@@ -7,7 +7,7 @@
         </p>
 
         <!-- Modal -->
-        <x-confirmation-modal wire:model="showModal">
+        <x-confirmation-modal wire:model.defer="showModal">
             <x-slot name="title">
                 Are You Sure?
             </x-slot>
