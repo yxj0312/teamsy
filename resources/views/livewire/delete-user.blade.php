@@ -1,8 +1,5 @@
 <div>
-   <form
-        id="delete-user-form"
-        x-data 
-    >
+   <form id="delete-user-form">
         <p>
             <x-button class="bg-blue-400 hover:bg-blue-500" wire:click.prevent="$set('showModal', true)">Yes, Delete</x-button>
             <!-- <a href="#user-delete-modal" class="underline text-blue-500">Delete</a> -->
