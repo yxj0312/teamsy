@@ -26,5 +26,7 @@
     <main class="text-sm col-span-9">
         {{ $slot }}
     </main>
+
+    @livewireScripts
 </body>
 </html>
