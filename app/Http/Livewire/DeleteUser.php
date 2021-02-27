@@ -17,4 +17,9 @@ class DeleteUser extends Component
     {
         return view('livewire.delete-user');
     }
+
+    public function handle()
+    {
+        dd('delete user');
+    }
 }
