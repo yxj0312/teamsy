@@ -2,11 +2,12 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\User;
 use Livewire\Component;
 
 class ManageUsers extends Component
 {
-    public $showModal = false;
+    public $deleteUserModal = false;
 
     // public function showModal()
     // {
@@ -18,8 +19,8 @@ class ManageUsers extends Component
         return view('livewire.manage-users');
     }
 
-    public function handle()
+    public function deleteUser(User $user)
     {
-        dd('delete user');
+        $user->delete();
     }
 }
