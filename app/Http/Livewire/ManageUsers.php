@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class ManageUsers extends Component
 {
-    public $deleteUserModal = false;
+    public $showDeleteUserModal = false;
 
     // public function showModal()
     // {
@@ -22,6 +22,7 @@ class ManageUsers extends Component
 
     public function deleteUser(User $user)
     {
+        dd('123');
         $user->delete();
     }
 }
