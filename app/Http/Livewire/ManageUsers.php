@@ -16,7 +16,8 @@ class ManageUsers extends Component
 
     public function render()
     {
-        return view('livewire.manage-users');
+        return view('livewire.manage-users')
+            ->with('users', User::all());
     }
 
     public function deleteUser(User $user)

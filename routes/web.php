@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'welcome')->name('home');
 
 Route::get('/welcome2', function() {
-    return view('welcome2')->with('users', User::all());
+    return view('welcome2');
 });
 
 Route::middleware('guest')->group(function () {
