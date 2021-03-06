@@ -24,9 +24,10 @@
     <script>
         window.$modals = {
             show(name) {
-                alert(
-                    'show the modal named' +  name
-                )
+                window.dispatchEvent(
+                    new CustomEvent('modal', {
+                        detail: name
+                }))
             }
         }
     </script>
