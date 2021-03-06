@@ -31,7 +31,7 @@
            
          
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <button class="text-indigo-600 hover:text-indigo-900"  wire:click.prevent="$set('showDeleteUserModal', true)">Delete</button>
+                <button class="text-indigo-600 hover:text-indigo-900"  wire:click.prevent="confirmDelete({{ $user->id }})">Delete</button>
               </td>
             </tr>
           @endforeach
@@ -55,7 +55,7 @@
         <x-button class="bg-gray-400 hover:bg-gray-500" wire:click="$set('showDeleteUserModal', false)">Cancel</x-button>
         <x-button class="bg-blue-400 hover:bg-blue-500" wire:click="deleteUser">Continue</x-button>
     </x-slot>
-</x-confirmation-modal>
+  </x-confirmation-modal>
 </div>
 
 

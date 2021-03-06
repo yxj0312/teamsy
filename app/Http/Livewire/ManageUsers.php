@@ -9,6 +9,8 @@ class ManageUsers extends Component
 {
     public $showDeleteUserModal = false;
 
+    public User $currentUser;
+
     // public function showModal()
     // {
     //     $this->showModal = true;
@@ -22,7 +24,13 @@ class ManageUsers extends Component
 
     public function deleteUser(User $user)
     {
-        dd('123');
         $user->delete();
+    }
+
+    public function confirmDelete(User $user)
+    {
+        $this->currentUser = $user;
+
+        $this->showDeleteUserModal = true;
     }
 }
