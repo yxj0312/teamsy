@@ -43,8 +43,7 @@
 
   <x-confirmation-modal wire:model.defer="showDeleteUserModal">
     <x-slot name="title">
-        Are You Sure?
-    
+        Delete {{  optional($currentUser)->name  }}
     </x-slot>
 
     <x-slot name="body">

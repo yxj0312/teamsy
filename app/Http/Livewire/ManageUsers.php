@@ -33,4 +33,9 @@ class ManageUsers extends Component
 
         $this->showDeleteUserModal = true;
     }
+
+    public function mount()
+    {
+        $this->currentUser = new User();
+    }
 }
