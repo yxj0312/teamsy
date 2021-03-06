@@ -40,9 +40,8 @@
       </div>
     </div>
   </div>
-</div>
 
-<x-confirmation-modal wire:model.defer="showDeleteUserModal">
+  <x-confirmation-modal wire:model.defer="showDeleteUserModal">
     <x-slot name="title">
         Are You Sure?
     
@@ -57,3 +56,6 @@
         <x-button class="bg-blue-400 hover:bg-blue-500" wire:click="deleteUser">Continue</x-button>
     </x-slot>
 </x-confirmation-modal>
+</div>
+
+
