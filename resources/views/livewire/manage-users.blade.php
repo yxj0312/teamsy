@@ -41,7 +41,7 @@
     </div>
   </div>
 
-
+  <form wire:submit.prevent="delete">
   <x-confirmation-modal wire:model.defer="showDeleteUserModal">
     <x-slot name="title">
         Delete {{  optional($currentUser)->name  }}
@@ -53,10 +53,10 @@
 
     <x-slot name="footer">
         <x-button class="bg-gray-400 hover:bg-gray-500" wire:click="$set('showDeleteUserModal', false)">Cancel</x-button>
-        <x-button class="bg-blue-400 hover:bg-blue-500" wire:click="delete">Continue</x-button>
+        <x-button type="submit" class="bg-blue-400 hover:bg-blue-500">Continue</x-button>
     </x-slot>
   </x-confirmation-modal>
-
+  </form>
 </div>
 
 
