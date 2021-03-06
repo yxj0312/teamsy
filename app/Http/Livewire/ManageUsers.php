@@ -22,9 +22,11 @@ class ManageUsers extends Component
             ->with('users', User::all());
     }
 
-    public function deleteUser(User $user)
+    public function delete()
     {
-        $user->delete();
+        $this->currentUser->delete();
+
+        $this->showDeleteUserModal = false;
     }
 
     public function confirmDelete(User $user)
