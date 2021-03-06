@@ -28,6 +28,8 @@ Route::get('/welcome2', function() {
     return view('welcome2');
 });
 
+Route::view('/welcome3', 'welcome3')->name('welcome3');
+
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
         ->name('login');
