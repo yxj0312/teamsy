@@ -1,13 +1,13 @@
 <x-layout>
     <div class="shadow sm:rounded-md sm:overflow-hidden">
         <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
-            <x-button class="bg-gray-400 hover:bg-gray-500" onClick="$modals.show('join')">Join</x-button>
+            <x-button class="bg-gray-400 hover:bg-gray-500" onClick="$modals.show('join-modal')">Join</x-button>
         </div>
     </div>
 
-    <x-modal>
+    <x-modal name="join-modal">
         <x-slot name="title">
-            <h1>Join</h1>
+            <h1 class="text-lg font-bold">Join</h1>
         </x-slot>
 
 
@@ -16,7 +16,7 @@
         </x-slot>
 
         <x-slot name="footer">
-            <x-button @click="show = false">Close</x-button>
+            <x-button class="bg-blue-500 hover:bg-blue-600" @click="show = false">Close</x-button>
         </x-slot>
 
     </x-modal>
